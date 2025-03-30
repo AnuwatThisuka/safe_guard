@@ -60,20 +60,20 @@ class AppTheme {
     navigationBarTheme: NavigationBarThemeData(
       backgroundColor: surfaceColor,
       indicatorColor: primaryColor.withOpacity(0.1),
-      labelTextStyle: MaterialStateProperty.resolveWith(
+      labelTextStyle: WidgetStateProperty.resolveWith(
         (states) => TextStyle(
-          color: states.contains(MaterialState.selected)
+          color: states.contains(WidgetState.selected)
               ? primaryColor
               : Colors.grey[600],
           fontSize: 12,
-          fontWeight: states.contains(MaterialState.selected)
+          fontWeight: states.contains(WidgetState.selected)
               ? FontWeight.w500
               : FontWeight.normal,
         ),
       ),
-      iconTheme: MaterialStateProperty.resolveWith(
+      iconTheme: WidgetStateProperty.resolveWith(
         (states) => IconThemeData(
-          color: states.contains(MaterialState.selected)
+          color: states.contains(WidgetState.selected)
               ? primaryColor
               : Colors.grey[600],
           size: 24,
@@ -236,20 +236,20 @@ class AppTheme {
     navigationBarTheme: NavigationBarThemeData(
       backgroundColor: darkSurfaceColor,
       indicatorColor: primaryColor.withOpacity(0.2),
-      labelTextStyle: MaterialStateProperty.resolveWith(
+      labelTextStyle: WidgetStateProperty.resolveWith(
         (states) => TextStyle(
-          color: states.contains(MaterialState.selected)
+          color: states.contains(WidgetState.selected)
               ? primaryColor.withOpacity(0.9)
               : Colors.grey[400],
           fontSize: 12,
-          fontWeight: states.contains(MaterialState.selected)
+          fontWeight: states.contains(WidgetState.selected)
               ? FontWeight.w500
               : FontWeight.normal,
         ),
       ),
-      iconTheme: MaterialStateProperty.resolveWith(
+      iconTheme: WidgetStateProperty.resolveWith(
         (states) => IconThemeData(
-          color: states.contains(MaterialState.selected)
+          color: states.contains(WidgetState.selected)
               ? primaryColor.withOpacity(0.9)
               : Colors.grey[400],
           size: 24,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:safe_guard/services/preferences_service.dart';
 
 class SettingsScreen extends StatefulWidget {
   const SettingsScreen({super.key});
@@ -615,12 +616,15 @@ class _SettingsScreenState extends State<SettingsScreen> {
               child: const Text('ยกเลิก'),
             ),
             FilledButton(
-              onPressed: () {
-                Navigator.pop(context);
-                // TODO: Implement actual sign out logic
-                ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(content: Text('ออกจากระบบเรียบร้อยแล้ว')),
-                );
+              onPressed: () async {
+                // Clear login state
+                await PreferencesService.logout();
+
+                // Navigate back to login screen
+                if (mounted) {
+                  // ignore: use_build_context_synchronously
+                  Navigator.pushReplacementNamed(context, '/login');
+                }
               },
               child: const Text('ออกจากระบบ'),
             ),

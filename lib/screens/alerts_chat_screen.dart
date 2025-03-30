@@ -46,7 +46,7 @@ class _AlertsTab extends StatelessWidget {
       children: [
         Container(
           padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
-          color: theme.colorScheme.surfaceVariant.withOpacity(0.3),
+          color: theme.colorScheme.surfaceContainerHighest.withOpacity(0.3),
           child: Row(
             children: [
               Icon(

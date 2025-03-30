@@ -39,6 +39,8 @@ dependencies:
   flutter_map:
   latlong2:
   geolocator:
+  shared_preferences: ^2.1.1
+  image_picker: ^1.1.2
 
 dev_dependencies:
   flutter_test:

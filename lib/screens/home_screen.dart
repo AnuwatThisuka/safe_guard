@@ -100,21 +100,6 @@ class _HomeScreenState extends State<HomeScreen>
 
     return Scaffold(
       backgroundColor: backgroundColor,
-      appBar: AppBar(
-        title: const Text(
-          'ช่วยเหลือฉุกเฉิน',
-        ),
-        centerTitle: true,
-        elevation: 0,
-        scrolledUnderElevation: 0,
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.settings_outlined),
-            onPressed: () {},
-            tooltip: 'การตั้งค่า',
-          ),
-        ],
-      ),
       body: SafeArea(
         child: CustomScrollView(
           slivers: [

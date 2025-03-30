@@ -8,13 +8,13 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final Color? backgroundColor;
 
   const CustomAppBar({
-    Key? key,
+    super.key,
     required this.title,
     this.actions,
     this.showBackButton = true,
     this.onBackPressed,
     this.backgroundColor,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
