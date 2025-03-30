@@ -19,14 +19,15 @@ SafeGuard is a Flutter application designed to enhance personal security and saf
 
 ## Installation
 
-1. Clone the repository
+1. **Clone the repository**
 
 ```bash
 
 git clone https://github.com/anuwatthisuka/safe_guard.git
+
 ```
 
-2. Install dependencies
+2. **Install dependencies**
 
 ```bash
 cd safe_guard
