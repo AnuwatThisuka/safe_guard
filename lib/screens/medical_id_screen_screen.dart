@@ -109,7 +109,7 @@ class _MedicalIDScreenState extends State<MedicalIDScreen> {
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
             colors: [
-              colorScheme.surfaceVariant.withOpacity(0.3),
+              colorScheme.surfaceContainerHighest.withOpacity(0.3),
               colorScheme.surface,
             ],
           ),
